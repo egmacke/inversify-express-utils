@@ -17,5 +17,5 @@ export declare class BaseHttpController {
     protected redirect(uri: string | URL): RedirectResult;
     protected responseMessage(message: HttpResponseMessage): ResponseMessageResult;
     protected statusCode(statusCode: number): StatusCodeResult;
-    protected json(content: object, statusCode?: number): JsonResult;
+    protected json<T extends Record<string, unknown>>(content: T | T[], statusCode?: number): JsonResult<T>;
 }

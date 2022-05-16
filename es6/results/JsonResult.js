@@ -10,8 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JsonResult = void 0;
-const httpResponseMessage_1 = require("../httpResponseMessage");
 const jsonContent_1 = require("../content/jsonContent");
+const httpResponseMessage_1 = require("../httpResponseMessage");
 class JsonResult {
     constructor(json, statusCode) {
         this.json = json;

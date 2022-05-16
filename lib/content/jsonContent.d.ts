@@ -1,6 +1,6 @@
 import { HttpContent } from './httpContent';
-export declare class JsonContent extends HttpContent {
+export declare class JsonContent<T extends Record<string, unknown>> extends HttpContent {
     private content;
-    constructor(content: object);
-    readAsync(): Promise<object>;
+    constructor(content: T | T[]);
+    readAsync(): Promise<T | T[]>;
 }
